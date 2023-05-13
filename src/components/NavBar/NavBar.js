@@ -4,6 +4,7 @@ import { NavLink, Link } from 'react-router-dom'
 import './NavBar.css'
 
 export const NavBar = () => {
+  debugger
   return (
     <nav className='NavBar'>
       <Link to='/'>

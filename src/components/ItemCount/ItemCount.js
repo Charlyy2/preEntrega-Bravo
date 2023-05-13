@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import './ItemCount.css'
-//import { CartContext } from '../../context/CartContext'
-//import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
+import { useContext } from 'react'
 
-export const ItemCount = ({ stock, initial, onAdd }) => {
-  const [quantity, setQuantity] = useState(initial);
- // const { addItem } = useContext(CartContext)
+export const ItemCount = ({ stock, product }) => {
+  const [quantity, setQuantity] = useState(0);
+  const { addItem } = useContext(CartContext)
 
   const handleAddToCart = () => {
-    // addItem(product, counter)
+    addItem(product, quantity)
   }
 
   const increment = () => {
@@ -19,7 +19,7 @@ export const ItemCount = ({ stock, initial, onAdd }) => {
 
   const decrement = () => {
     if (quantity > 1) {
-      setQuantity(quantity - 1)
+      setQuantity()
     }
   }
   return (

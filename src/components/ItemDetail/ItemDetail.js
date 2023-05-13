@@ -29,7 +29,7 @@ export const ItemDetail = ({ id, name, img, category, description, price, stock 
             </picture>
             <section>
                 <p className='Info'>
-                    Categoria: ${category}
+                    Categoria: {category}
                 </p>
                 <p className='Info'>
                     Stock Disponible: {stock}

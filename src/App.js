@@ -7,6 +7,7 @@ import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetail
 import  {CartProvider}  from './context/CartContext';
 import { Cart } from './components/Cart/Cart'
 import { Checkout } from './components/Checkout/Checkout';
+import 'firebase/firestore'
 
 function App() {
   return (
